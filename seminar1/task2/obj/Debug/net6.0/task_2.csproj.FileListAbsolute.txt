@@ -1,0 +1,30 @@
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\bin\Debug\net6.0\task_2.exe
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\bin\Debug\net6.0\task_2.deps.json
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\bin\Debug\net6.0\task_2.runtimeconfig.json
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\bin\Debug\net6.0\task_2.dll
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\bin\Debug\net6.0\task_2.pdb
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\obj\Debug\net6.0\task_2.csproj.AssemblyReference.cache
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\obj\Debug\net6.0\task_2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\obj\Debug\net6.0\task_2.AssemblyInfoInputs.cache
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\obj\Debug\net6.0\task_2.AssemblyInfo.cs
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\obj\Debug\net6.0\task_2.csproj.CoreCompileInputs.cache
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\obj\Debug\net6.0\task_2.dll
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\obj\Debug\net6.0\refint\task_2.dll
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\obj\Debug\net6.0\task_2.pdb
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\obj\Debug\net6.0\task_2.genruntimeconfig.cache
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C#\Practical task for seminar 1\task_2\obj\Debug\net6.0\ref\task_2.dll
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\bin\Debug\net6.0\task_2.exe
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\bin\Debug\net6.0\task_2.deps.json
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\bin\Debug\net6.0\task_2.runtimeconfig.json
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\bin\Debug\net6.0\task_2.dll
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\bin\Debug\net6.0\task_2.pdb
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\obj\Debug\net6.0\task_2.csproj.AssemblyReference.cache
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\obj\Debug\net6.0\task_2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\obj\Debug\net6.0\task_2.AssemblyInfoInputs.cache
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\obj\Debug\net6.0\task_2.AssemblyInfo.cs
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\obj\Debug\net6.0\task_2.csproj.CoreCompileInputs.cache
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\obj\Debug\net6.0\task_2.dll
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\obj\Debug\net6.0\refint\task_2.dll
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\obj\Debug\net6.0\task_2.pdb
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\obj\Debug\net6.0\task_2.genruntimeconfig.cache
+E:\Microsoft VS Code\Знакомство с языками программирования (семинары)\C-sharp\seminar1\task2\obj\Debug\net6.0\ref\task_2.dll
