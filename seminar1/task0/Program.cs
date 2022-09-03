@@ -3,7 +3,7 @@
 // -3 -> 9 
 // -7 -> 49
 
-Console.WriteLine("Введите число:");
+Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine(number * number);
