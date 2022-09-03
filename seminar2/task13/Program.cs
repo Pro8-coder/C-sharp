@@ -3,4 +3,15 @@
 78 -> третьей цифры нет
 32679 -> 6*/
 
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+string numberString = number.ToString();
 
+if (numberString.Length < 3)
+{
+    Console.WriteLine("Третьей цифры нет.");
+}
+else
+{
+    Console.Write($"Третья цифра: {numberString[2]}");
+}
