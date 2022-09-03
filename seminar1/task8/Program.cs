@@ -2,4 +2,19 @@
 5 -> 2, 4
 8 -> 2, 4, 6, 8*/
 
+Console.WriteLine("Введите число больше 1: ");
+int N = Convert.ToInt32(Console.ReadLine());
+int count = 2;
 
+if(N > 1)
+{
+    while(count <= N)
+    {
+        Console.Write(count + " ");
+        count += 2;
+    }
+}
+else
+{
+    Console.WriteLine("Введённое число должно быть больше 1.");
+}

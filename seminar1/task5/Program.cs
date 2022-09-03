@@ -2,11 +2,11 @@
 4 -> "-4, -3, -2, -1, 0, 1, 2, 3, 4" 
 2 -> " -2, -1, 0, 1, 2"*/
 
-Console.WriteLine("Введите число: ");
+Console.WriteLine("Введите положительное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int number2 = -number;
 while(number2 <= number)
 {
     Console.Write(number2 + " ");
-    number2 = number2 + 1;
+    number2++;
 }
