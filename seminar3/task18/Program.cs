@@ -13,15 +13,15 @@ else
     {
         Console.WriteLine("x > 0 && y > 0");
     }
-    else if (quarter == 2)
+    if (quarter == 2)
     {
         Console.WriteLine("x < 0 && y > 0");
     }
-    else if (quarter == 3)
+    if (quarter == 3)
     {
         Console.WriteLine("x < 0 && y < 0");
     }
-    else if (quarter == 4)
+    if (quarter == 4)
     {
         Console.WriteLine("x > 0 && y < 0");
     }

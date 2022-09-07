@@ -9,7 +9,7 @@ string numberString = number.ToString();
 
 if (numberString.Length == 5)
 {
-    if (numberString == new string(numberString.Reverse().ToArray()))       //вариант через разворот
+    if (numberString == new string(numberString.Reverse().ToArray()))       //вариант через разворот (после того как сделал, понял что это и было доп задание к семинару 3 :D)
     {
         Console.Write("Да, это палиндром");
     }
