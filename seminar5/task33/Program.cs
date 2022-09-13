@@ -30,8 +30,6 @@ bool IsNumberIsArray(int[] arr, int number)
         if (arr[i] == number)
         {
             result = true;
-            return result;
-            break;
         }
     }
     return result;
