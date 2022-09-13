@@ -8,7 +8,7 @@ for (int i = 0; i < n; i++)
 {
     arr[i] = rnd.Next(0, 2);
 }
-Console.WriteLine();
+Console.WriteLine(string.Join(", ", arr));
 
 //foreach (int el in arr)
 // {
