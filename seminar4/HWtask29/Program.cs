@@ -14,4 +14,4 @@
 //   Console.Write(el);
 // }
 
-Console.WriteLine(string.Join(", ", arr));
+//Console.WriteLine(string.Join(", ", arr));
