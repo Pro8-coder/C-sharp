@@ -12,7 +12,7 @@ int[] ArrConsole(int size)
     int[] arr = new int[size];
     for (int i = 0; i < size; i++)
     {
-        arr[i] = numberRead($"Введите числовой элемент массива под индексом {i}: ");
+        arr[i] = numberRead($"Введите числовой элемент массива под индексом {i}:\t");
     }
     return arr;
 }
