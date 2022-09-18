@@ -14,8 +14,9 @@
 // }
 
 
-int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
+int[] arr = { 1, 2, 3, 4, 5, };
 int[] arrNew = new int[(arr.Length + 1) / 2];
+
 for (int i = 0; i < arrNew.Length; i++)
 {
     arrNew[i] = arr[i] * arr[arr.Length - 1 - i];
@@ -24,4 +25,5 @@ if (arr.Length % 2 != 0)
 {
     arrNew[arrNew.Length - 1] = arr[arr.Length / 2];
 }
+
 Console.Write(string.Join(", ", arrNew));

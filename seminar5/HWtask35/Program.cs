@@ -4,4 +4,35 @@
 [1, 2, 3, 6, 2] -> 0
 [10, 11, 12, 13, 14] -> 5*/
 
+int[] GetArray(int size, int leftRange, int rightRange)
+{
+    int[] arr = new int[size];
+    Random rand = new Random();
+    for (int i = 0; i < size; i++)
+    {
+        arr[i] = rand.Next(leftRange, rightRange + 1);
+    }
+    return arr;
+}
 
+
+int EntranceRange(int[] arr, int min, int max)
+{
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i] >= min && arr[i] <= max)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+
+int[] array = GetArray(123, 0, 150);
+Console.WriteLine($"В массиве чисел: \n{string.Join(", ", array)}");
+int min = 10;
+int max = 99;
+int counter = EntranceRange(array, min, max);
+Console.WriteLine($"{counter} из них в отрезке [{min}, {max}]");
