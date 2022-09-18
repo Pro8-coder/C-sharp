@@ -28,7 +28,7 @@ int DifferenceMaxMin(int[] arr)
             max = arr[i];
         }
     }
-    return (max - min);
+    return max - min;
 }
 
 
