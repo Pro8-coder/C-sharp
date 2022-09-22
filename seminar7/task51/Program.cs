@@ -16,9 +16,7 @@ int numberRead(string message)
 int[,] GetMatrix(int rowsCount, int columnsCount, int leftRange = -10, int ringhtRange = 10)
 {
     int[,] matrix = new int[rowsCount, columnsCount];
-
     Random rand = new Random();
-
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
@@ -75,7 +73,7 @@ void PrintMatrix(int[,] matrix, string text = "")
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Console.Write($"{matrix[i, j]} ");
+            Console.Write(String.Format("{0,5:f1}", $"{matrix[i, j]} "));
         }
         Console.WriteLine();
     }
