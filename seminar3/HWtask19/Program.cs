@@ -20,7 +20,6 @@ if (numberString.Length == 5)
 
     // for (int i = 0; i < numberString.Length / 2; i++)                       //вариант через цикл
     // {
-    //     char ch = numberString[i];
     //     if (numberString[i] != numberString[numberString.Length - i - 1])
     //     {
     //         Console.WriteLine("Нет, это не палиндром");
