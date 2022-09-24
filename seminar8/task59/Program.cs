@@ -70,14 +70,39 @@ void PrintMatrix(int[,] matrix, string text = "")
 int[,] DelRowsColumnsMinElemMatrix(int[,] matrix, int minElem, int rowsMin, int columnsMin)
 {
     int[,] matrixNew = new int[matrix.GetLength(1) - 1, matrix.GetLength(0) - 1];
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int i = 0; i < matrix.GetLength(0)-1; i++)
     {
-        if (i == rowsMin) continue;
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        if (i < rowsMin)
         {
-            if (j == columnsMin) continue;
-            matrixNew[i, j] = matrix[i, j];
+            for (int j = 0; j < matrix.GetLength(1)-1; j++)
+            {
+                if (j < columnsMin)
+                {
+                    matrixNew[i, j] = matrix[i, j];
+                }
+                else if (j > columnsMin)
+                {
+                    matrixNew[i, j] = matrix[i, j+1];
+                }
+                else if (j == columnsMin) continue;
+            }
         }
+        else if (i >= rowsMin)
+        {
+            for (int j = 0; j < matrix.GetLength(1)-1; j++)
+            {
+                if (j < columnsMin)
+                {
+                    matrixNew[i, j] = matrix[i+1, j];
+                }
+                else if (j >= columnsMin)
+                {
+                    matrixNew[i, j] = matrix[i+1, j+1];
+                }
+                //else if (j == columnsMin) continue;
+            }
+        }
+        //else if (i == rowsMin) continue;
     }
     return matrixNew;
 }
@@ -89,7 +114,5 @@ int[,] matr = GetMatrix(m, n);
 PrintMatrix(matr, "Рандомный массив");
 var (minElem, rowsMin, columnsMin) = MinElemRowsColumnsMatrix(matr);
 Console.WriteLine($"{minElem} [{rowsMin}, {columnsMin}]");
-
 int[,] matrNew = DelRowsColumnsMinElemMatrix(matr, minElem, rowsMin, columnsMin);
 PrintMatrix(matrNew, "Новый массив");
-//Console.Write(String.Format("{0,5:f1}", $"{string.Join(", ", matrNew)} "));
