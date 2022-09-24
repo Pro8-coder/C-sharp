@@ -36,22 +36,14 @@ void PrintMatrix(int[,] matrix, string text = "")
 }
 
 
-void SwapLineMatrix(int[,] matrix);
+void SwapLineMatrix(int[,] matrix)
 {
     int tempLine;
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int j = 0; j < matrix.GetLength(1); j++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            if (i == 0)
-            {
-                tempLine = matrix[i,j];
-                matrix[i,j] = matrix[matrix.GetLength(0) - i - 1, matrix.GetLength(1) - j - 1];
-                matrix[matrix.GetLength(0) - i - 1, matrix.GetLength(1) - j - 1] = tempLine;
-                Console.Write(String.Format("{0,5:f1}", $"{matrix[i, j]} "));
-            }
-            Console.WriteLine();
-        }
+        tempLine = matrix[0, j];
+        matrix[0, j] = matrix[matrix.GetLength(0) - 1, j];
+        matrix[matrix.GetLength(0) - 1, j] = tempLine;
     }
 }
 
@@ -59,7 +51,6 @@ void SwapLineMatrix(int[,] matrix);
 int m = numberRead("Введите количество строк");
 int n = numberRead("Введите количество столбцов");
 int[,] matr = GetMatrix(m, n);
-PrintMatrix(matr, "Рандомный массив");
-//int[,] newMatr = SwapLineMatrix(matr);
-//PrintMatrix(matr, "Новый массив");
+PrintMatrix(matr, "Рандомная матрица");
 SwapLineMatrix(matr);
+PrintMatrix(matr, "Новая матрица");
