@@ -7,49 +7,32 @@ int numberRead(string message)
 }
 
 
-int[,] GetMatrix(int rowsCount, int columnsCount, int leftRange = -10, int ringhtRange = 10)
+void Pascal(int N)
 {
-    int[,] matrix = new int[rowsCount, columnsCount];
-    Random rand = new Random();
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    int[][] arr = new int[N][];
+    arr[0] = new int[] { 1 };
+    Console.WriteLine("{0,5}", arr[0][0]);
+    for (int i = 1; i < N; i++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        arr[i] = new int[i + 1];
+        for (int j = 0; j <= i; j++)
         {
-            matrix[i, j] = rand.Next(leftRange, ringhtRange);
-        }
-    }
-    return matrix;
-}
-
-
-void PrintMatrix(int[,] matrix, string text = "")
-{
-    Console.WriteLine(text);
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            Console.Write(String.Format("{0,5:f1}", $"{matrix[i, j]} "));
+            if (j == 0 || j == i)
+            {
+                arr[i][j] = 1;
+                Console.Write("{0,5}", arr[i][j]);
+            }
+            else
+            {
+                arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
+                Console.Write("{0,5}", arr[i][j]);
+            }
         }
         Console.WriteLine();
     }
 }
 
 
-void Pascal(int[,] matrix)
-{
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            Console.Write(String.Format("{0,5:f1}", $"{matrix[i, j]} "));
-        }
-        Console.WriteLine();
-    }
-}
+int N = numberRead("Введите количество столбцов");
+Pascal(N);
 
-
-int m = numberRead("Введите количество строк");
-int n = numberRead("Введите количество столбцов");
-int[,] matr = GetMatrix(m, n);
-PrintMatrix(matr, "Рандомный массив");
