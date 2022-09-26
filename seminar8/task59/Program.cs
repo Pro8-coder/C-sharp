@@ -69,7 +69,7 @@ void PrintMatrix(int[,] matrix, string text = "")
 
 int[,] DelRowsColumnsMinElemMatrix(int[,] matrix, int minElem = 0, int rowsMin = 0, int columnsMin = 0)
 {
-    int[,] matrixNew = new int[matrix.GetLength(1) - 1, matrix.GetLength(0) - 1];
+    int[,] matrixNew = new int[matrix.GetLength(0) - 1, matrix.GetLength(1) - 1];
     int rowNext = 0;
     int columnNext = 0;
     for (int i = 0; i < matrixNew.GetLength(0); i++)
