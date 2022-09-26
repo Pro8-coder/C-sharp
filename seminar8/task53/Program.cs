@@ -38,10 +38,9 @@ void PrintMatrix(int[,] matrix, string text = "")
 
 void SwapLineMatrix(int[,] matrix)
 {
-    int tempLine;
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
-        tempLine = matrix[0, j];
+        int tempLine = matrix[0, j];
         matrix[0, j] = matrix[matrix.GetLength(0) - 1, j];
         matrix[matrix.GetLength(0) - 1, j] = tempLine;
     }

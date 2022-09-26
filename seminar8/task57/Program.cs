@@ -47,28 +47,17 @@ void PrintMatrix(int[,] matrix, string text = "")
 
 void ElemMatrix(int[,] matrix)
 {
-    int[] arr = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, };
-    for (int k = 0; k < arr.Length; k++)
+    int[] arr = new int[10];
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        int count = 0;
-        for (int i = 0; i < matrix.GetLength(0); i++)
+        for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            for (int j = 0; j < matrix.GetLength(1); j++)
-            {
-                if (k == matrix[i, j])
-                {
-                    count++;
-                }
-            }
+            arr[matrix[i, j]]++;
         }
-        if (count != 2 && count != 3 && count != 4)
-        {
-            Console.WriteLine($"{k} встречается {count} раз.");
-        }
-        else
-        {
-            Console.WriteLine($"{k} встречается {count} раза.");
-        }
+    }
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i] != 0) Console.WriteLine($"Количество повторений для {i} = {arr[i]}");
     }
 }
 

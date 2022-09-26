@@ -17,7 +17,7 @@ int numberRead(string message)
 }
 
 
-int[,] GetMatrix(int rowsCount, int columnsCount, int leftRange = 0, int ringhtRange = 10)
+int[,] GetMatrix(int rowsCount, int columnsCount, int leftRange = 0, int ringhtRange = 9)
 {
     int[,] matrix = new int[rowsCount, columnsCount];
     Random rand = new Random();
@@ -67,42 +67,20 @@ void PrintMatrix(int[,] matrix, string text = "")
 }
 
 
-int[,] DelRowsColumnsMinElemMatrix(int[,] matrix, int minElem, int rowsMin, int columnsMin)
+int[,] DelRowsColumnsMinElemMatrix(int[,] matrix, int minElem = 0, int rowsMin = 0, int columnsMin = 0)
 {
     int[,] matrixNew = new int[matrix.GetLength(1) - 1, matrix.GetLength(0) - 1];
-    for (int i = 0; i < matrix.GetLength(0)-1; i++)
+    int rowNext = 0;
+    int columnNext = 0;
+    for (int i = 0; i < matrixNew.GetLength(0); i++)
     {
-        if (i < rowsMin)
+        if (i == rowsMin) rowNext++;
+        for (int j = 0; j < matrixNew.GetLength(1); j++)
         {
-            for (int j = 0; j < matrix.GetLength(1)-1; j++)
-            {
-                if (j < columnsMin)
-                {
-                    matrixNew[i, j] = matrix[i, j];
-                }
-                else if (j > columnsMin)
-                {
-                    matrixNew[i, j] = matrix[i, j+1];
-                }
-                else if (j == columnsMin) continue;
-            }
+            if (j == columnsMin) columnNext++;
+            matrixNew[i, j] = matrix[i + rowNext, j + columnNext];
         }
-        else if (i >= rowsMin)
-        {
-            for (int j = 0; j < matrix.GetLength(1)-1; j++)
-            {
-                if (j < columnsMin)
-                {
-                    matrixNew[i, j] = matrix[i+1, j];
-                }
-                else if (j >= columnsMin)
-                {
-                    matrixNew[i, j] = matrix[i+1, j+1];
-                }
-                //else if (j == columnsMin) continue;
-            }
-        }
-        //else if (i == rowsMin) continue;
+        columnNext = 0;
     }
     return matrixNew;
 }
