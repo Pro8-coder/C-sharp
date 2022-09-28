@@ -33,7 +33,7 @@ void PrintMatrix(int[,] matrix, string text = "")
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Console.Write(String.Format("{0,5:f1}", $"{matrix[i, j]} "));
+            Console.Write(String.Format("{0,5}", $"{matrix[i, j]} "));
         }
         Console.WriteLine();
     }
