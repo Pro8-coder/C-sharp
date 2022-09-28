@@ -41,7 +41,7 @@ int[,,] GetMatrix(int heightMatrix, int longMatrix, int depthMatrix, int leftRan
         else arr[n] = temp;
     }
 
-    int[,,] matrix = new int[heightMatrix, longMatrix, depthMatrix];
+    int[,,] matrix = new int[depthMatrix, longMatrix, heightMatrix];
     int count = 0;
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
