@@ -11,14 +11,13 @@ int numberRead(string message)
 
 int SumDigitsNumber(int num)
 {
-    if (num / 10 == 0)
+    if (num == 0)
     {
         return num;
     }
     else
     {
-        int sum = 0;
-        return sum += SumDigitsNumber(num / 10) + num % 10;
+        return SumDigitsNumber(num / 10) + num % 10;
     }
 }
 
