@@ -9,20 +9,19 @@ int numberRead(string message)
 }
 
 
-int RaisingADegreeB(int num, int degree)
+void PrintNto1Recurs(int n)
 {
-    if (degree == 1)
+    if (n <= 0)
     {
-        return num;
+        return;
     }
     else
     {
-        return RaisingADegreeB(num, degree - 1) * num;
+        Console.Write($"{n} ");
+        PrintNto1Recurs(n - 1);
     }
 }
 
 
-int A = numberRead("Введите число A: ");
-int B = numberRead("Введите степень B: ");
-int raisingADegreeB = RaisingADegreeB(A, B);
-Console.WriteLine(raisingADegreeB);
+int N = numberRead("Введите число: ");
+PrintNto1Recurs(N);

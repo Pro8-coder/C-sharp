@@ -16,7 +16,7 @@ void PrintMtoNRecurs(int m, int n)
         int temp1 = n;
         n = m;
         m = temp1;
-        PrintMtoNRecurs(m,n);
+        PrintMtoNRecurs(m, n);
     }
     else if (n == m)
     {
@@ -25,7 +25,7 @@ void PrintMtoNRecurs(int m, int n)
     }
     else if (m < n)
     {
-        PrintMtoNRecurs(m, n-1);
+        PrintMtoNRecurs(m, n - 1);
         Console.Write($"{n} ");
     }
 }

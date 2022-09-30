@@ -11,13 +11,13 @@ int numberRead(string message)
 
 void Print1toNRecurs(int n)
 {
-    if (n<=0)
+    if (n <= 0)
     {
         return;
     }
     else
     {
-        Print1toNRecurs(n-1);
+        Print1toNRecurs(n - 1);
         Console.Write($"{n} ");
     }
 }
