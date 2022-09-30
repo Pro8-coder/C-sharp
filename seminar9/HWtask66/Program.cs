@@ -16,16 +16,12 @@ int SumMtoNRecurs(int m, int n)
         int temp1 = n;
         n = m;
         m = temp1;
-        //return SumMtoNRecurs(m, n);
+        return SumMtoNRecurs(m, n);
     }
-    // else if (n == m)
-    // {
-    //     return SumMtoNRecurs(m, n - 1) + n;
-    // }
-    // else if (m < n)
-    // {
-    //     return SumMtoNRecurs(m, n - 1) + n;
-    // }
+    else if (m == n)
+    {
+        return m;
+    }
     return SumMtoNRecurs(m, n - 1) + n;
 }
 
@@ -33,4 +29,4 @@ int SumMtoNRecurs(int m, int n)
 int M = numberRead("Введите число M: ");
 int N = numberRead("Введите число N: ");
 int sumMtoN = SumMtoNRecurs(M, N);
-Console.WriteLine($"{sumMtoN}");
+Console.WriteLine(sumMtoN);
