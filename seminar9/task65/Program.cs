@@ -13,18 +13,20 @@ void PrintMtoNRecurs(int m, int n)
 {
     if (m > n)
     {
-        int temp = n;
+        int temp1 = n;
         n = m;
-        m = temp;
+        m = temp1;
+        PrintMtoNRecurs(m,n);
     }
-    if (n >= m)
+    else if (n == m)
     {
+        Console.Write($"{n} ");
         return;
     }
-    else
+    else if (m < n)
     {
-        Print1toNRecurs(m + 1);
-        Console.Write($"{m} ");
+        PrintMtoNRecurs(m, n-1);
+        Console.Write($"{n} ");
     }
 }
 
