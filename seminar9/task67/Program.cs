@@ -9,7 +9,20 @@ int numberRead(string message)
 }
 
 
-
+int SumDigitsNumber(int num)
+{
+    if (num / 10 == 0)
+    {
+        return num;
+    }
+    else
+    {
+        int sum = 0;
+        return sum += SumDigitsNumber(num / 10) + num % 10;
+    }
+}
 
 
 int N = numberRead("Введите число N: ");
+int sumDigitsNumber = SumDigitsNumber(N);
+Console.WriteLine(sumDigitsNumber);
